@@ -61,7 +61,7 @@ syntax
 
 **sudo iptables [option] CHAIN_rule [-j target]**
 
-**The following are some of the frequently used options of iptables:
+**The following are some of the frequently used options of iptables:**
 
     --append, -A: It is used for adding any rule to the end of a chain.
     --check, -C: It looks for the rule that is matching with the requirements of a chain.
@@ -71,6 +71,6 @@ syntax
     --list, -L: This option is used for displaying every rule within a chain.
     --new-chain, -N: It makes a new chain.
     --verbose, -V: It displays more details if using this option.
-    --delete-chain, -X: It deletes a given chain.**
+    --delete-chain, -X: It deletes a given chain.
 
 
