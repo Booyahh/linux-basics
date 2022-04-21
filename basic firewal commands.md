@@ -1,24 +1,4 @@
-## Firewall Basics
-
- **What is Firewall?**
-
-Firewall is a network security system that filters and controls the traffic on a predetermined set of rules. This is an intermediary system between the device and the internet.
-
-**Chains?**
-
-We have three chains(set of rules) which are used to process the traffic:-
-
-    INPUT Chains => Any traffic coming from the internet(network) towards your local machine has to go through the input chains. 
-    OUTPUT Chains => Any traffic going from your local machine to the internet needs to go through the output chains.
-    FORWARD Chains => Any traffic which is coming from the external network and going to another network needs to go through the forward chain.
-    
-**Policies**
-
-There are three actions which the iptables can perform on the traffic
-
-    ACCEPT
-    DROP
-    REJECT
+## Basic firewall commands
 
 **Basic UFW commands**
 
