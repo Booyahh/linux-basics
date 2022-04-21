@@ -1,4 +1,4 @@
-## Firewall configuration
+## Firewall Basics
 
  **What is Firewall?**
 
