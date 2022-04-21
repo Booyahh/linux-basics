@@ -20,13 +20,31 @@ There are three actions which the iptables can perform on the traffic
     DROP
     REJECT
 
-**Basic UFW commands **
+**Basic UFW commands**
 
+```bash
 sudo ufw status
+```
+```bash
 sudo ufw enable
+```
+```bash
 sudo ufw disable
+```
+```bash
 sudo ufw app list
+```
 
+```bash
+sudo ufw deny from 203.0.113.100
+```
+**Bloc Subnet**
+sudo ufw deny from 203.0.113.0/24
+
+Block Incoming Connections to a Network Interface
+sudo ufw deny in on eth0 from 203.0.113.100
+Block Outgoing SMTP Mail
+sudo ufw deny out 25
 
 **Basic UFW commands **
 
