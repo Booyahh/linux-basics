@@ -57,6 +57,8 @@ install
 sudo apt-get install iptables
 ```
 syntax
+
+
 **sudo iptables [option] CHAIN_rule [-j target]**
 
 **The following are some of the frequently used options of iptables:
