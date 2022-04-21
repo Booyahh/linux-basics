@@ -1,8 +1,8 @@
-## vsftpd configuration
+## Firewall configuration
 
- **What is Ftp?**
+ **What is Firewall?**
 
-FTP is a standard network protocol used for the transfer of files between a client and server on a computer network
+Firewall is a network security system that filters and controls the traffic on a predetermined set of rules. This is an intermediary system between the device and the internet.
 
 **What is vsftpd?**
 
