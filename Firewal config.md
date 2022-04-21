@@ -10,17 +10,15 @@ We have three chains(set of rules) which are used to process the traffic:-
 
     INPUT Chains => Any traffic coming from the internet(network) towards your local machine has to go through the input chains. 
     OUTPUT Chains => Any traffic going from your local machine to the internet needs to go through the output chains.
-    FORWARD Chains => Any traffic which is coming from the **external network** and going to another network needs to go through the forward chain.
+    FORWARD Chains => Any traffic which is coming from the external network and going to another network needs to go through the forward chain.
     
-**Chains?**
+**Policies**
 
-We have three chains(set of rules) which are used to process the traffic:-
+There are three actions which the iptables can perform on the traffic
 
-    INPUT Chains
-    OUTPUT Chains
-    FORWARD Chains
-
-
+    ACCEPT
+    DROP
+    REJECT
 
 **Examine the case requirements**
 
