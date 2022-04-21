@@ -4,9 +4,23 @@
 
 Firewall is a network security system that filters and controls the traffic on a predetermined set of rules. This is an intermediary system between the device and the internet.
 
-**What is vsftpd?**
+**Chains?**
 
-vsftpd stands for **Very Secure FTP Daemon**. It is secure, stable and extremely fast. If you want to setup complicated FTP, then go with vsftpd. It has ability to handle large numbers of connections efficiently and securely.
+We have three chains(set of rules) which are used to process the traffic:-
+
+    INPUT Chains => Any traffic coming from the internet(network) towards your local machine has to go through the input chains. 
+    OUTPUT Chains => Any traffic going from your local machine to the internet needs to go through the output chains.
+    FORWARD Chains => Any traffic which is coming from the **external network** and going to another network needs to go through the forward chain.
+    
+**Chains?**
+
+We have three chains(set of rules) which are used to process the traffic:-
+
+    INPUT Chains
+    OUTPUT Chains
+    FORWARD Chains
+
+
 
 **Examine the case requirements**
 
