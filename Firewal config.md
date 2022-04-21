@@ -49,3 +49,7 @@ ufw delete (specific no in row)
 ```bash
 sudo ufw status
 ```
+
+**BASIC IP TABLES COMMAND**
+
+
