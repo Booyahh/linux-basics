@@ -39,12 +39,18 @@ sudo ufw app list
 sudo ufw deny from 203.0.113.100
 ```
 **Bloc Subnet**
+```bash
 sudo ufw deny from 203.0.113.0/24
+```
 
-Block Incoming Connections to a Network Interface
+**Block Incoming Connections to a Network Interface**
+```bash
 sudo ufw deny in on eth0 from 203.0.113.100
-Block Outgoing SMTP Mail
+```
+**Block Outgoing SMTP Mail**
+```bash
 sudo ufw deny out 25
+```
 
 **Basic UFW commands **
 
