@@ -20,12 +20,15 @@ There are three actions which the iptables can perform on the traffic
     DROP
     REJECT
 
-**Examine the case requirements**
+**Basic UFW commands **
 
-|     SERVER      | 	   ACT AS  |	   IP ADDRESS   |   PACKAGES    |
-|-----------------|-------------|------------------|----------------|
-|    centos       |	server      |	192.168.0.2      |   server and client |
-|    ubuntu       |	client      | 192.168.0.3      |   client & Gui |
+sudo ufw status
+sudo ufw enable
+sudo ufw disable
+sudo ufw app list
+
+
+**Basic UFW commands **
 
 **Server Installation**
 
