@@ -50,6 +50,24 @@ ufw delete (specific no in row)
 sudo ufw status
 ```
 
-**BASIC IP TABLES COMMAND**
+**Configure and install firewall iptables in Ubuntu**
+
+install 
+```bash
+sudo apt-get install iptables
+```
+syntax
+**sudo iptables [option] CHAIN_rule [-j target]**
+
+**The following are some of the frequently used options of iptables:
+    --append, -A: It is used for adding any rule to the end of a chain.
+    --check, -C: It looks for the rule that is matching with the requirements of a chain.
+    --delete, -D: It removes the defined rule from the chain.
+    --flush, -F: It removes every rule from a chain.
+    --insert, -I: It is used for adding any rule to the chain at a specified position.
+    --list, -L: This option is used for displaying every rule within a chain.
+    --new-chain, -N: It makes a new chain.
+    --verbose, -V: It displays more details if using this option.
+    --delete-chain, -X: It deletes a given chain.**
 
 
