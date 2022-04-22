@@ -124,7 +124,7 @@ ff02::2 ip6-allrouters**
 
 complete suucefully launch ur site
 
-#SSL Configuration
+## SSL Configuration
 
 
 ```bash
@@ -152,10 +152,12 @@ Configuring Apache to Use SSL
 sudo vim /etc/apache2/sites-available/your_domain_or_ip.conf
 ```
 **<VirtualHost *:443>
-   SSLEngine on
+
+   **SSLEngine on
    SSLCertificateFile /etc/ssl/certs/apache-selfsigned.crt
    SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key
-</VirtualHost>**
+
+**</VirtualHost>**
 
 create folder
 
