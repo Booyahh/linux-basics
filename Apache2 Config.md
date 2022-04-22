@@ -62,7 +62,7 @@ sudo vim /var/www/your_domain/index.html
 **edit HTML file then save and exit
 /Var/www/ section complete**
 
-## To Modify /etc/Apache2/sites-available Section
+## To Modify /etc/Apache2 Section
 
 ```bash
 cd /etc/apache2/sites-available
