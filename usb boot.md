@@ -24,20 +24,18 @@ then enter w
 
 press q for quit
 
-then eject the usb and re insert
-
-type 
+then Eject the USB so use below command
 
 ```bash
-sudo umount /dev/sdb "no result shown"
+sudo umount /dev/sdb
 ```
-then 
+then format the disk use below command
 
 ```bash
 sudo mkfs.vfat -I /dev/sdb -- format the disk
 ```
-finally using 
+finally using iso Image convert to bootable file use below command 
 
 ```bash
-dd command dd if=pathname of=dev/sdb
+dd command dd if=/home/username/downloads/ubuntu os of=dev/sdb
 ```
