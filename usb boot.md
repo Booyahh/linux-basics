@@ -37,5 +37,5 @@ sudo mkfs.vfat -I /dev/sdb -- format the disk
 finally using iso Image convert to bootable file use below command 
 
 ```bash
-dd command dd if=/home/username/downloads/ubuntu os of=dev/sdb
+dd if=/home/username/downloads/ubuntu os of=dev/sdb
 ```
