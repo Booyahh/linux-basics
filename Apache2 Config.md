@@ -126,16 +126,54 @@ complete suucefully launch ur site
 
 #SSL Configuration
 
+
+```bash
 enable SSL
+```
 
+```bash
 sudo a2enmod ssl
-
+```
 restart the server
 
+```bash
 sudo systemctl restart apache2
-
+```
 create ssl key using open ssl cmd**
 
+
+```bash
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
+```
+Configuring Apache to Use SSL
 
 
+```bash
+sudo vim /etc/apache2/sites-available/your_domain_or_ip.conf
+```
+**<VirtualHost *:443>
+   SSLEngine on
+   SSLCertificateFile /etc/ssl/certs/apache-selfsigned.crt
+   SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key
+</VirtualHost>**
+
+create folder
+
+```bash
+sudo mkdir /var/www/your_domain_or_ip
+```
+create new file
+
+```bash
+sudo nano /var/www/your_domain_or_ip/index.html
+```
+site check
+
+```bash
+sudo a2ensite your_domain_or_ip.conf
+```
+reload
+
+```bash
+sudo systemctl reload apache2
+```
