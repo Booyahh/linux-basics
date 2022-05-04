@@ -26,3 +26,21 @@ adduser username
 **output**
 
 ![Screenshot from 2022-05-03 20-19-51](https://user-images.githubusercontent.com/102893121/166482036-27ddd27e-4d69-44c8-9906-b1462cd3ec8c.png)
+
+**set Sudo Privileges**
+
+```bash
+sudo usermod -aG sudo username
+```
+**change root or user*
+
+```bash
+sudo -i
+su username 
+```
+use **exit** it is used to exit the change user
+
+**delete user**
+
+```bash
+sudo  sudo deluser focal --remove-home 
