@@ -32,7 +32,7 @@ adduser username
 ```bash
 sudo usermod -aG sudo username
 ```
-**change root or user*
+**change root or user**
 
 ```bash
 sudo -i
@@ -43,4 +43,7 @@ use **exit** it is used to exit the change user
 **delete user**
 
 ```bash
+sudo deluser focal 
+
 sudo  sudo deluser focal --remove-home 
+```
