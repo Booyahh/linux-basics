@@ -71,3 +71,22 @@ to verify user add the group
 ```bash
 getent user|grep groupname
 ```
+Next give permission to access to root file for the group 
+
+in this section files are here in sudo user directries 
+
+to change group file using this command
+
+```bash
+chgrp groupname filename
+```
+
+in this case other user do not access the fle so change file permission
+```bash
+chmod 750 filename
+```
+![Screenshot from 2022-05-04 17-21-34](https://user-images.githubusercontent.com/102893121/166675778-c05b5b1e-b21a-4c15-9061-cd0a5f74a90f.png)
+
+
+
+then check 
