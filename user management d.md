@@ -38,6 +38,10 @@ sudo usermod -aG sudo username
 sudo -i
 su username 
 ```
+to view the added user use this commant
+```bash 
+cat /etc/passwd |grep username
+```
 use **exit** it is used to exit the change user
 
 **delete user**
@@ -46,4 +50,24 @@ use **exit** it is used to exit the change user
 sudo deluser focal 
 
 sudo  sudo deluser focal --remove-home 
+```
+2nd commend is used to delete user and te user home directory
+
+** Create group**
+```bash 
+sudo groupadd groupname
+```
+to verify the group created or not
+```bash
+getent group |grep groupname
+```
+
+then add the user to the create the group 
+```bash
+sudo usermd -aG groupname username
+```
+to verify user add the group
+
+```bash
+getent user|grep groupname
 ```
