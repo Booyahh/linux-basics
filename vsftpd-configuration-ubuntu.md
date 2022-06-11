@@ -68,6 +68,9 @@ rsa_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem
 rsa_private_key_file=/etc/ssl/private/ssl-cert-snakeoil.key
 ssl_enable=NO
 chroot_list_file=/etc/vsftpd.chroot_list
+userlist_enable=YES
+userlist_file=/etc/vsftpd.chroot_list
+userlist_deny=NO
 
 ```
 
