@@ -22,3 +22,4 @@ node2 sync side
 
 sudo ntpdate NTP-server-host
 sudo timedatectl set-ntp off
+sudo apt-get install ntp
