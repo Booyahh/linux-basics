@@ -8,6 +8,7 @@ systemctl disable firewalld
 sed -i 's/SELINUX=enforcing/SELINUX=disabled/' 
 sudo yum install php ( PHP 7.3.33 (cli) )( 
 sudo yum install mysql-server -y ( mysql 5.7.40 )
+sudo yum install phpmyadmin
 
 
 ```
