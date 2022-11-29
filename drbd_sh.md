@@ -47,3 +47,4 @@ resource clusterdb {
 }
 EOF
 ```
+https://github.com/trimstray/the-practical-linux-hardening-guide#prologue
