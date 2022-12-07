@@ -54,4 +54,33 @@ FLUSH PRIVILEGES;
  * UPDATE – Allows users to updates the rows in a table.
  * GRANT OPTION – Users can grant or remove the privileges of other users.
 
+_check privileges_
 
+```sql
+SHOW GRANTS FOR 'newuser'@'localhost'
+```
+
+_revoke permission_
+
+```sql
+REVOKE INSERT ON testdb.* FROM newser'@'localhost';
+FLUSH PRIVILEGES;
+````
+
+_Remove User_
+
+```sql
+DROP USER 'username'@'localhost';
+```
+
+_view user_
+
+```sql
+SELECT user FROM mysql.user;
+# To view current user
+SELECT current_user();
+# To view current logged user
+SELECT user, host, db, command FROM information_schema processlist;
+
+```
+![](https://camo.githubusercontent.com/76109812f3127b0f86940373897b04ac8943cb3c0f057f90046444480f61bafd/68747470733a2f2f692e696d6775722e636f6d2f77617856496d762e706e67)
