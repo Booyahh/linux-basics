@@ -84,3 +84,34 @@ SELECT user, host, db, command FROM information_schema processlist;
 
 ```
 ![](https://camo.githubusercontent.com/76109812f3127b0f86940373897b04ac8943cb3c0f057f90046444480f61bafd/68747470733a2f2f692e696d6775722e636f6d2f77617856496d762e706e67)
+
+**DB creation**
+
+```aql
+CREATE DATABASE test;
+USE test;
+SHOW DATABASES;
+
+```
+
+**Table creation**
+
+```sql
+CREATE TABLE pet (name VARCHAR(20), owner VARCHAR(20),species VARCHAR(20), sex CHAR(1), birth DATE, death DATE);
+
+#view table
+SHOW DATABASES
+
+#get table details
+DESCRIBE pet;
+
+#insert table
+INSERT INTO pet VALUES ('Puffball','Diane','hamster','f','1999-03-30',NULL);
+
+#to view insert data
+SELECT * FROM pet;
+```
+
+
+
+
