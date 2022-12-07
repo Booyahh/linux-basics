@@ -34,5 +34,15 @@ sudo apt autoclean
 ```sql
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'Nsdeva4036@';
 GRANT all ON *.* TO 'root'@'localhost';
+FLUSH PRIVILEGES;
 ```
+
+**user creation**
+
+```sql
+CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
+FLUSH PRIVILEGES;
+```
+
 
