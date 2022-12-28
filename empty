@@ -1,0 +1,4 @@
+wget -q -0 - https://packages.grafana.com/gpg.key | sudo apt add -
+sudo apt-get-repository "deb https://packages.grafana.com/oss/deb stable main"
+sudo apt update
+sudoa apt install grafana
