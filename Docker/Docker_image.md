@@ -25,8 +25,17 @@ _docker history_
 doxker history <Image id>
 ```
 
-_docker image backup_
+_docker image backup & restore_
 ```bash
 docker save <image id:latest> > backup.tar
+docker load -i <backup iamge>
 ```
+_Remove unwanted images_
+
+```bash
+docker rmi <image id>
+```
+
+
+
 
