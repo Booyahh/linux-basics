@@ -19,6 +19,8 @@ Install Docker
 
 ```bash
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
+sudo systemctl start docker.service
+sudo systemctl enable docker.service
 ```
 
 After installation give permission SUDO for Docker group
@@ -26,5 +28,6 @@ After installation give permission SUDO for Docker group
 ```bash
 sudo groupadd docker
 sudo usermod -aG docker $USER
+#reboot
 ```
 
