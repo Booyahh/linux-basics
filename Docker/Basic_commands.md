@@ -22,6 +22,8 @@ docker stats (Top command)
 docker search
 docker pull (imagename)
 sudo docker images
+docker cp deva.txt 28f5c5f29fd7:/tmp/
+docker cp deva1:/tmp/deva.txt .
 
 
 sudo docker create
@@ -35,4 +37,28 @@ sudo docker ps -a
 ```
 
 sudo docker run -d --name deva1 httpd
+
+docker login 
+
+```bash
+sudo docker exec -it deva1 bash
+```
+_Start & Stop_
+
+``bash
+sudo docker start deva1
+sudo docker stop deva1
+```
+
+Constainer remove 
+
+```bash
+sudo docker rm <container id>
+```
+
+docker logs
+
+```bash
+docker logs <containr id>
+```
 
