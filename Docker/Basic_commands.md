@@ -13,9 +13,15 @@ docker info --help
 docker system --help
 ```
 
-sudo docker system prune
+_remove unwanted images_
 
-performance check
+**careful to use**
+
+```bash
+sudo docker system prune
+```
+
+_Container performance check_
 
 ```bash
 docker stats
@@ -34,7 +40,7 @@ _copy_
 docker cp deva.txt 28f5c5f29fd7:/tmp/
 docker cp deva1:/tmp/deva.txt .
 ```
-container creation
+_container creation_
 
 ```bash
 sudo docker create
@@ -49,7 +55,7 @@ sudo docker ps
 sudo docker ps -a
 ```
 
-docker login 
+_docker login_ 
 
 ```bash
 sudo docker exec -it deva1 bash
@@ -69,7 +75,7 @@ _Constainer remove_
 sudo docker rm <container id>
 ```
 
-docker logs
+_docker logs_
 
 ```bash
 docker logs <containr id>
