@@ -46,6 +46,8 @@ _container creation_
 sudo docker create
 sudo docker run
 sudo docker run -d --name deva1 httpd
+sudo docker run -d -it --name web1 -p 8090:80 httpd
+
 ```
 
 _check container status_
