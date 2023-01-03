@@ -69,7 +69,7 @@ sudo docker stop deva1
 ```
 
 
-_Constainer remove_ 
+_Container remove_ 
 
 ```bash
 sudo docker rm <container id>
