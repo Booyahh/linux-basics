@@ -3,6 +3,20 @@
 
 ![](https://camo.githubusercontent.com/76109812f3127b0f86940373897b04ac8943cb3c0f057f90046444480f61bafd/68747470733a2f2f692e696d6775722e636f6d2f77617856496d762e706e67)
 
+_Mysql Installation_
+
+*Centos*
+
+```bash
+sudo rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022 
+sudo yum localinstall https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm 
+sudo yum install mysql-community-server
+sudo grep 'temporary password' /var/log/mysqld.log
+```
+
+
+![](https://camo.githubusercontent.com/76109812f3127b0f86940373897b04ac8943cb3c0f057f90046444480f61bafd/68747470733a2f2f692e696d6775722e636f6d2f77617856496d762e706e67)
+
 **MySQL Complete remove**
 
 Make sure MySQL is not running:
