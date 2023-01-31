@@ -1,3 +1,4 @@
+```bash
 server-id=1
 replicate-same-server-id=0
 auto-increment-increment=2
@@ -9,3 +10,4 @@ master-info-file=/var/lib/mysql/mysql-master.info
 relay-log-info-file=/var/lib/mysql/serverA-relay-log.info
 log-bin=/var/lib/mysql/serverA-bin
 bind-address = 192.168.137.125
+```
