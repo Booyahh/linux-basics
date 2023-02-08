@@ -11,5 +11,6 @@ sudo yum install mysql-server -y ( mysql 5.7.40 )
 sudo yum install phpmyadmin
 
 
+
 ```
 
