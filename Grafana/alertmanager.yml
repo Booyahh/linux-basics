@@ -2,9 +2,9 @@ global:
   resolve_timeout: 30s
   smtp_smarthost: 'localhost:25'
   smtp_from: 'no-reply@localhost'
-  slack_api_url: 'https://hooks.slack.com/services/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'
+  slack_api_url: 'https://hooks.slack.com/services/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'
 templates:
-- /var/moniter/alertmanager/notifications.tmpl
+  - /var/moniter/alertmanager/notifications.tmpl
 route:
   group_by: ['alertname']
   group_wait: 10s
@@ -26,17 +26,19 @@ receivers:
   slack_configs:
   - send_resolved: true
     channel: '#general'
-    title: '{{ .Status | toUpper }}{{ if eq .Status "firing" }}:{{ .Alerts.Firing | len }}{{ end }} | Monitoring Event Notification'
+#    title: '{{ template "custom_title" . }}'
+#    text: '{{ template "custom_slack_message" . }}'
+    title: '{{ .Status | toUpper }}{{ if eq .Status "firing" }} - {{ .Alerts.Firing | len }}{{ end }} |  RADIANT PROMETHEUS ALERTS'
     text: >-
       {{ range .Alerts }}
-        *Alert:* {{ .Annotations.summary }} - `{{ .Labels.severity }}`
+        *Alert:* {{ .Annotations.summary }}
+        *State:* `{{ .Labels.severity }}`
         *Description:* {{ .Annotations.description }}
         *Graph:* <{{ .GeneratorURL }}|:chart_with_upwards_trend:>
         *Details:*
         {{ range .Labels.SortedPairs }} • *{{ .Name }}:* `{{ .Value }}`
         {{ end }}
       {{ end }}
-
 - name: 'email_managers'
   email_configs:
   - to: 'jinojoe@gmail.com'
