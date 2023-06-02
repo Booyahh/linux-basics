@@ -20,4 +20,6 @@ then create volume group for the above disk name `new_vol_group`
 vgcreate new_vol_group /dev/sda1 /dev/sdb1 /dev/sdc1
 ```
 
+After volume group created. 
+
 
