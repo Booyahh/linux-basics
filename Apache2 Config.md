@@ -3,8 +3,6 @@
 **Install Apache2**
 ```bash
 sudo apt update
-```
-```bash
 sudo apt install apache2
 ```
 to **check status**
@@ -21,20 +19,10 @@ hostname -i
 
 ```bash
 sudo systemctl start apache2
-```
-```bash
 sudo systemctl stop apache2
-```
-```bash
 sudo systemctl restart apache2
-```
-```bash
 sudo systemctl reload apache2
-```
-```bash
 sudo systemctl enable apache2
-```
-```bash
 sudo systemctl disable apache2
 ```
 ## virtual Host setting Up
