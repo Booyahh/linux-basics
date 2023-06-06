@@ -1,7 +1,11 @@
 cd 
+
 ls -a
+
 ll
+
 pwd
+
 whoami
 date
 cp
